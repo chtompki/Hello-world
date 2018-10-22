@@ -15,8 +15,8 @@ public static class StringUtilsIsBlank {
      * @param str is the <code>String</code> to check.
      * @return <code>true</code> if the <code>String</code>.
      */
-    public static boolean isBlank(String str) {
-        return str == null || "".equals(str);
+    public static boolean isBlank(final String str) {
+        return str == null || str.length == 0;
     }
 
 }
